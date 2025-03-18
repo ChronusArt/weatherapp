@@ -1,3 +1,6 @@
+
+// Weather service implementation, fetching weather data from the repository and handling errors
+
 const IWeatherService = require("../interfaces/IWeatherService");
 const logger = require("../config/logger");
 

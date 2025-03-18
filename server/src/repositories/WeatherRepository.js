@@ -1,3 +1,6 @@
+
+// Repository for fetching weather data from the OpenWeather API
+
 const axios = require("axios");
 require("dotenv").config({ path: "./.env" });
 

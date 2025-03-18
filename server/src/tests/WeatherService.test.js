@@ -1,3 +1,6 @@
+
+// Test suite for WeatherService using a mocked repository 
+
 const WeatherService = require("../services/WeatherService");
 
 const mockRepository = {
