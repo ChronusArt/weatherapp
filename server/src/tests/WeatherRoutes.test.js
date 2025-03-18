@@ -1,3 +1,6 @@
+
+// Test suite for Weather API endpoints using supertest and mocking WeatherService 
+
 const request = require("supertest");
 const app = require("../app");
 

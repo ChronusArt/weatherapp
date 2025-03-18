@@ -1,3 +1,6 @@
+
+// Controller for handling weather-related requests and fetching weather data
+
 const logger = require("../config/logger");
 
 class WeatherController {

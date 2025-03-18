@@ -1,3 +1,6 @@
+
+//Structured logger using winston for capturing and storing log messages at different levels for debugging and monitoring
+
 const winston = require("winston");
 
 const logger = winston.createLogger({
