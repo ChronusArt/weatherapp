@@ -65,12 +65,13 @@ const App = () => {
 
     <div ref={mapContainerRef} className="absolute top-0 left-0 w-full h-full" />
 
+    {/* Instructions  */}
     <div className="absolute top-4 left-4 bg-white text-black px-4 py-2 rounded-lg shadow-md text-xs font-bold
                     md:top-4 md:w-auto w-full text-center">
         Click a location on the map to display weather details.
     </div>
 
-
+    {/* Coordinates */}
     {coordinates && (
       <div className="absolute top-4 left-4 bg-gray-700 text-white px-4 py-2 rounded-lg shadow-md text-sm
                       md:top-4 md:right-4 md: mt-12 md:left-auto md:w-auto w-full text-center">
@@ -78,7 +79,7 @@ const App = () => {
       </div>
     )}
 
-
+    {/* Weather Details */}
     {showWeather && (
       <motion.div 
         initial={{ x: 100, opacity: 0 }}
@@ -116,7 +117,7 @@ const App = () => {
       </motion.div>
     )}
 
-
+    {/* Developer Info */}
     <div className="absolute bottom-4 left-4 bg-white text-black px-4 py-2 rounded-lg shadow-md text-sm
                     md:bottom-4 md:left-4 md:mt-4 md:w-auto w-full text-center">
       <span className="font-bold">Developed by:</span> J-Archer Branzuela
