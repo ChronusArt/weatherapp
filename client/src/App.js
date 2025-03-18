@@ -64,6 +64,7 @@ const App = () => {
     <div className="relative w-screen h-screen flex flex-col md:flex-row">
 
     <div ref={mapContainerRef} className="absolute top-0 left-0 w-full h-full" />
+    
     {/* Instructions  */}
     <div className="absolute top-4 left-4 bg-white text-black px-4 py-2 rounded-lg shadow-md text-xs font-bold
                     md:top-4 md:w-auto w-full text-center">
