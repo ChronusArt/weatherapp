@@ -1,3 +1,6 @@
+
+//Frontend displaying an interactive map with weather details on location click using Mapbox and OpenWeather API
+
 import { useRef, useEffect, useState } from 'react'
 import mapboxgl from 'mapbox-gl'
 import { motion } from 'framer-motion';
@@ -18,6 +21,7 @@ const App = () => {
   const [showWeather, setShowWeather] = useState(false);
   const [weather, setWeather] = useState(null);
 
+  // Initialize Mapbox map
   useEffect(() => {
     mapboxgl.accessToken = MAPBOX_TOKEN;
     mapRef.current = new mapboxgl.Map({
@@ -27,6 +31,7 @@ const App = () => {
       zoom: 10.12
     });
 
+    // Handle click event on map to fetch weather data
     mapRef.current.on('click', async (e) => {
       const { lng, lat } = e.lngLat;
       setCoordinates({ lng, lat });
@@ -40,6 +45,7 @@ const App = () => {
         .setLngLat([lng, lat])
         .addTo(mapRef.current);
 
+        // Fetch weather data based on clicked coordinates
         try {
           const response = await axios.get(`${WEATHER_API}?lat=${lat}&lon=${lng}`);
           setWeather(response.data);
