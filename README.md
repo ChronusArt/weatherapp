@@ -4,7 +4,7 @@ A full-stack weather application designed with clean architecture in mind. The s
 
 ---
 
-## 📦 Na setup ako aoibhefuobwegiuobwo
+## 📦 Na setup ako aoibhefuobwegiuobwo ibfoisbgoerbjg 
 
 ### 🖥️ Server
 
