@@ -79,6 +79,8 @@ const App = () => {
       </div>
     )}
 
+{/* HOTDOG */}
+
     {/* Weather Details */}
     {showWeather && (
       <motion.div 
